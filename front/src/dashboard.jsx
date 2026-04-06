@@ -137,7 +137,7 @@ function Dashboard() {
                 <div className="task-content">
                   <span className={`task-text ${t.concluida ? 'completed' : ''}`}>
                     {t.texto}
-                    {t.concluida && <span className="timestamp"> ✅ (Finalizado às {t.concluida_em})</span>}
+                    {t.concluida ? <span className="timestamp"> ✅ (Finalizado às {t.concluida_em})</span> : null}
                   </span>
                   
                   <div className="action-buttons">
